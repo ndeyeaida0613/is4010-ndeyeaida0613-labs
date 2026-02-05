@@ -1,8 +1,9 @@
-# IS4010 Course
+# IS4010 Labs - Ndeye Aida Kone
 
 **Course**: IS4010 - AI-Enhanced Application Development
 **Institution**: University of Cincinnati, Lindner College of Business
 **Instructor**: Brandon M. Greenwell
+**Semester**: Spring 2026
 
 ---
 
