@@ -76,8 +76,8 @@ def guessing_game():
         else:
             print(f"Congratulations! You've guessed it in {attempts} attempts!")
             break
+    if __name__ == '__main__':
+      guessing_game()
 
-if __name__ == '__main__':
-    guessing_game()
 
 

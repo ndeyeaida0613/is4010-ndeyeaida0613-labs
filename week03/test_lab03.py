@@ -18,7 +18,6 @@ def test_generate_mad_lib():
     story = generate_mad_lib(adj, noun, verb)
     
     assert isinstance(story, str), "Function should return a string"
-    
     assert adj in story, f"Adjective '{adj}' not found in story"
     assert noun in story, f"Noun '{noun}' not found in story"
     assert verb in story, f"Verb '{verb}' not found in story"

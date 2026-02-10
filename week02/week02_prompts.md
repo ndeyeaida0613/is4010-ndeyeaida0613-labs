@@ -117,12 +117,3 @@ def calculate_area(length, width):
     return length * width
 ```
 
-
-## Problem 4: Even Sum Debug Prompt
-
-**Prompt (CPTF):**
-- **Context:** This function should sum all even numbers in a list, but it's currently returning the wrong result.
-- **Persona:** You are a senior Python developer helping debug code.
-- **Task:** Identify the logical error in the conditional statement and provide the corrected version.
-- **Format:** Provide the fixed code in a Python code block with a brief explanation of the bug.
-

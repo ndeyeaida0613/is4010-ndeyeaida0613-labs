@@ -5,8 +5,7 @@ def main():
 
     import sys
     print(f"\nPython version: {sys.version}")
-    print(f"Python executable: {sys.executable}")
+    print(f"/python executable: {sys.executable}")
 
-
-if __name__ == "__main__":
-    main()
+    if __name__ =="__main__":
+        main()

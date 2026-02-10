@@ -1,7 +1,6 @@
 import pytest
 from lab05 import calculate_average_age, get_active_user_emails
 
-
 @pytest.fixture
 def sample_users():
     return [
