@@ -27,7 +27,8 @@ def find_user_by_name(users, name):
     ----------
     users : list of dict
         A list of dictionaries, where each dictionary represents a user
-        and has 'name', 'age', and 'email' keys.
+        and has 'name', 'age', and 'email' keys. It is recommended to
+        convert this list into a more efficient data structure for lookups.
     name : str
         The name of the user to find.
 
@@ -36,10 +37,9 @@ def find_user_by_name(users, name):
     dict or None
         The dictionary of the found user, or None if no user is found.
     """
-    for user in users:
-        if user.get('name') == name:
-            return user
-    return None
+    # Converting to a dictionary for more efficient lookups as recommended
+    user_map = {user['name']: user for user in users if 'name' in user}
+    return user_map.get(name)
 
 
 def get_list_of_even_numbers(numbers):
