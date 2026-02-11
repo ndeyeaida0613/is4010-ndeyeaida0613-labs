@@ -53,7 +53,6 @@ def test_guessing_game_correct_guess():
                 
                 assert mock_print.called, "Function should print output"
 
-                s
                 print_calls = [str(call) for call in mock_print.call_args_list]
 
                 output_text = ' '.join(print_calls).lower()
