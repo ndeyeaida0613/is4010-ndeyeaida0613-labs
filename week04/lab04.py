@@ -52,4 +52,3 @@ def find_user_by_name(users, name):
         if user.get("name") == name:
           return user
     return None
-
