@@ -1,13 +1,10 @@
-# test_lab04.py
 import pytest
 from lab04 import find_common_elements, find_user_by_name, get_list_of_even_numbers
 
-
-# Tests for find_common_elements
 def test_find_common_elements_with_common_items():
     l1 = [1, 2, 3, 4, 5]
     l2 = [4, 5, 6, 7, 8]
-    # The order does not matter, so we compare sets
+    
     assert set(find_common_elements(l1, l2)) == {4, 5}
 
 
@@ -21,8 +18,6 @@ def test_find_common_elements_with_empty_lists():
     assert find_common_elements([], []) == []
     assert find_common_elements([1, 2, 3], []) == []
 
-
-# Tests for find_user_by_name
 @pytest.fixture
 def sample_users():
     return [
@@ -46,8 +41,6 @@ def test_find_user_by_name_not_existing(sample_users):
 def test_find_user_by_name_empty_list():
     assert find_user_by_name([], "alice") is None
 
-
-# Tests for get_list_of_even_numbers
 def test_get_list_of_even_numbers_mixed():
     assert get_list_of_even_numbers([1, 2, 3, 4, 5, 6]) == [2, 4, 6]
 

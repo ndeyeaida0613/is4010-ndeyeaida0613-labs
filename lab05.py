@@ -40,6 +40,8 @@ def get_active_user_emails(users_list):
         if user.get("is_active") and user.get("email")
     ]
 
-
-active_user_emails = get_active_user_emails(users)
-print(f"active user emails: {active_user_emails}")
+if __name__ == "__main__":
+    avg_age = calculate_average_age(users)
+    print(f"average user age: {avg_age:.2f}")
+    active_user_emails = get_active_user_emails(users)
+    print(f"active user emails: {active_user_emails}")
