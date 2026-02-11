@@ -32,7 +32,7 @@ def find_user_by_name(users, name):
             The user dictionary of the found user, or None if no user is found.
             """
     for user in users:
-        if user.get('name') == name:
+        if user.get("name") == name:
           return user
     return None
 
