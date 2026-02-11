@@ -1,3 +1,20 @@
+def get_list_of_even_numbers(numbers):
+    """Return a new list containong only the even numbers from the input list.
+    
+    The order of the numbers is the output list must be the same as the order of the even numbers in the input list.
+    
+    Parameters
+    ----------
+    numbers : list of int
+        A list of integers.
+        
+        Returns
+        -------
+        list of int
+            A new list containing only the even integers from the input list.
+            """
+    return [num for num in numbers if num % 2 == 0]
+
 def find_common_elements(list1, list2):
     """Find the common elements between two lists.
     This function should take two lists and return a new list containing only the elements that are present in both lists. The final list can be in any order.
@@ -32,23 +49,6 @@ def find_user_by_name(users, name):
             The user dictionary of the found user, or None if no user is found.
             """
     for user in users:
-        if user.get('name') == name:
+        if user.get("name") == name:
           return user
     return None
-
-def get_list_of_even_numbers(numbers):
-    """Return a new list containong only the even numbers from the input list.
-    
-    The order of the numbers is the output list must be the same as the order of the even numbers in the input list.
-    
-    Parameters
-    ----------
-    numbers : list of int
-        A list of integers.
-        
-        Returns
-        -------
-        list of int
-            A new list containing only the even integers from the input list.
-            """
-    return [num for num in numbers if num % 2 == 0]
